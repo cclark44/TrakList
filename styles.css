@@ -1,0 +1,163 @@
+/* general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* nav bar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* search bar */
+.search-bar {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.search-bar input {
+    border: none;
+    padding: 10px;
+    outline: none;
+    width: 200px;
+}
+
+.search-bar button {
+    border: none;
+    background: #333;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+/* profile link */
+.profile-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.profile-link:hover {
+    text-decoration: underline;
+}
+
+/* main content */
+.main-content {
+    padding: 20px;
+}
+
+/* popular albums */
+.albums {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding: 10px 0;
+    white-space: nowrap;
+}
+
+/* album card */
+.album {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
+    text-align: center;
+}
+
+/* album image */
+.album img {
+    width: 150px;
+    border-radius: 5px;
+}
+
+.review-section {
+  margin-top: 40px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 12px;
+}
+
+.review-card {
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+  margin-bottom: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+
+.search-results {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.album-card {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.album-info {
+  text-align: center;
+}
+
+/* Review */
+
+.review-form {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.review-form textarea,
+.review-form input[type="number"] {
+  width: 100%;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.review-form button {
+  padding: 8px;
+  background-color: #E05338;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.review-form button:hover {
+  background-color: #e77964;
+}
+
+/* home logo */
+
+.logo {
+    height: 40px;
+    vertical-align: middle;
+    width: auto;
+}
